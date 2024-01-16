@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="MIST353ClassExample.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <h1>Taco</h1>
+    <h1 class="h1">Taco</h1>
     <h2 style="color:#2200ff;">Picture of Taco</h2>
     <img src="taco.jpg" alt="Taco" />
 
-    <table class="myTable">
+    <table class="myTable table">
         <thead>
             <tr>
                 <td>Reasons I love Tacos</td>
@@ -32,7 +34,7 @@
             </tr>
         </tbody>
     </table>
-    <table class="myTable myRedTable">
+    <table class="myTable myRedTable table-striped">
         <thead>
             <tr id="tableRow1">
                 <td>Place</td>
@@ -40,5 +42,6 @@
             </tr>
         </thead>
     </table>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
