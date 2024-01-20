@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="MIST353ClassExample.styles.css" asp-append-version="true" />
+    <script>
+        function hideRow(){
+            document.getElementById("tableRow1").style.display = "none";
+            document.getElementById("hidebtn").style.display = "none";
+            document.getElementById("unhidebtn").style.display = "inline";
+        }
+        function unhideRow() {
+            document.getElementById("tableRow1").style.display = "inline";
+            document.getElementById("hidebtn").style.display = "inline";
+            document.getElementById("unhidebtn").style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <h1 class="h1">Taco</h1>
@@ -42,6 +54,11 @@
             </tr>
         </thead>
     </table>
+    <button type="button" onclick="hideRow()" id="hidebtn">Hide Row</button>
+    <button type="button" onclick="unhideRow()" id="unhidebtn">Unhide Row</button>
+    <script>
+        document.getElementById("unhidebtn").style.display="none"
+    </script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
